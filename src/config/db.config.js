@@ -10,7 +10,6 @@ const connectDB = async () => {
       throw new Error('No se puede hacer la conexion a la Url ');
     }
     
-    await mongoose.connect(mongouri);
     console.log('Conexión a MongoDB establecida');
   } catch (error) {
     console.error('Error al conectar a MongoDB:', error.message);
