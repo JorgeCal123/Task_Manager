@@ -127,6 +127,19 @@ router.get('/:id', taskValidation.getTaskValidation, taskController.getTaskById)
  *           type: string
  *         required: true
  *         description: ID de la tarea a actualizar
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               title:
+ *                 type: string
+ *               description:
+ *                 type: string
+ *               completed:
+ *                 type: boolean
  *     responses:
  *       200:
  *         description: Tarea actualizada exitosamente
@@ -152,19 +165,6 @@ router.put('/:id', taskValidation.updateTaskValidation, taskController.updateTas
  *           type: string
  *         required: true
  *         description: ID de la tarea a eliminar
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               title:
- *                 type: string
- *               description:
- *                 type: string
- *               completed:
- *                 type: boolean
  *     responses:
  *       200:
  *         description: Tarea eliminada exitosamente
