@@ -10,8 +10,9 @@ const options = {
     },
     servers: [
       {
-        url: `http://localhost:${process.env.PORT || 3000}`,
-        description: 'Servidor de desarrollo'
+        url: `http://localhost:${process.env.PORT || 3000 || 'https://web-production-a09fb.up.railway.app'}`,  // Usamos la variable de entorno o la URL proporcionada por Railway
+        description: 'Servidor de producción'
+
       }
     ]
   },
