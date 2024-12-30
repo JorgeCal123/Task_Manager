@@ -10,7 +10,7 @@ const options = {
     },
     servers: [
       {
-        url: `https://web-production-a09fb.up.railway.app'}`,  // Usamos la variable de entorno o la URL proporcionada por Railway
+        url: 'https://web-production-a09fb.up.railway.app',  // Usamos la variable de entorno o la URL proporcionada por Railway
         description: 'Servidor de producción'
 
       }
